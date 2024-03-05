@@ -1,0 +1,5 @@
+@import "~bootstrap/scss/bootstrap.scss";
+
+.classe {
+    font-family: 'Courier New', Courier, monospace;
+}
