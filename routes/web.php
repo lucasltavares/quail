@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\QuailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [QuailController::class, 'index']);
+Route::get('/create/quail', [QuailController::class, 'create']);
+Route::post('/store/quail', [QuailController::class, 'store']);
