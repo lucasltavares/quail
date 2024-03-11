@@ -1,6 +1,6 @@
 <x-header title="New quail">
     <div class="container">
-        <form action="/store/quail" method="post">
+        <form action="/store/quail" method="post" class="col-md-6 mx-auto">
             @csrf
             <div class="mb-3">
                 <label for="nome" class="form-label mt-3">Title:</label>
@@ -10,7 +10,7 @@
                     <textarea class="form-control" id="content" name="content" rows="3"></textarea>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Quail it!</button>
+            <button type="submit" class="btn btn-primary mt-3">Quail it!</button>
         </form>
     </div>
 </x-header>
